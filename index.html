@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<!-- ceci est un commentaire
+pas de commentaire entre deux balises -->
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Accueil</title>
+
+        <link href="assetcss/style.css" rel="stylesheet">
+        <link href="assetcss/styles.css" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+
+    <header>
+
+        <h1> ACCUEIL </h1>
+
+        <p> Présentation</p>
+
+        <p>l'histoire du<abbr title="Hypertext Markup Langage" class="dropdown" >HTML</abbr>  à travers les âges</p>
+
+        <p>Le langage<strong>html</strong> , se charge du sens du contenu de la page web mais en aucun cas de son enrichissement(couleurs,taille...etc</p>
+
+        <!-- ici la balise strong fait ressortir l'importance au sens du contenu qu'elle encadre , elle ne le met pas engras juste par enrichissement-->
+        <!-- il n'y a qu'une seule balise main par page,elle contient le contenu principal de la page-->
+        <!-- une section va me servir à séparer les thématique de manière sémentique, elle contient un header ou footer parmis d'autres chose, ici section= css--> 
+        <!--un seul h1 par doc html pour éviter une faute de référencement-->
+                    
+        <nav class="bg-dark "><!--Element qui regroupe des balises de navigation-->
+
+            <ul class="flex container">  <!-- ul est un conteneur de liste-->
+
+                  <!--Lien interne vers une section-->
+                 
+                            <li> 
+                                <a class= "btn bg-dark" href="./section-html.html" title="HTML la référence">
+
+                                <span class = "icon-html-five" ></span>
+                                HTML 
+                                </a>
+                             </li> <!-- li est une ligne de liste-->
+
+                             <li>   
+                                <a class=" btn  bg-dark "  href="./sectioncss.html" title="CSS la référence"> 
+
+                                <span class = "icon-css3"> </span>
+
+                                CSS 
+
+                                </a> 
+
+                             </li> <!-- li est une ligne de liste-->
+
+                             <li>   
+                                <a class=" btn  bg-dark "  href="./contact.html" title="contactez-nous"> 
+
+                                <span class = "icon-css3"> </span>
+
+                                CONTACT
+
+                                </a> 
+
+                             </li>
+                        
+                                 
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+    <main><!-- Contenu principal d'une page / unique dans un document -->
+      <body>
+            <section id="section-html">
+                <header>
+                    <h2>Le langage HTML</h2>
+                    <p>
+                        Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
+                        <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
+                    </p>
+                </header>
+
+                <article>
+                    <header>
+                        <h3>Deux familles de balises HTML</h3>
+                    </header>
+                    <p>
+                        Les balises bloc définissent un rectangle occupant
+                        la totalité de la largeur disponible dans le navigateur.
+                    </p>
+
+                        <ul>
+
+                            <li> 
+                                <a class=" btn bg-dark shadowed" href="./section-html.html" title="section-html">
+                                En savoir plus 
+
+                                </a>
+
+                             </li> 
+
+                        </ul>
+
+                    <footer>
+                        <cite title="w3c.org">
+                            <a href="https://www.w3.org" title="W3C" target="_new">
+                                Bloc tags
+                            </a>
+                        </cite>
+                    </footer>
+                </article>
+            </section>
+
+            <section id="section-css">
+
+                <header>
+                    <h4>Le langage CSS</h4>
+                    <p>
+                        Le langage CSS est responsable de la forme des contenus.
+                    </p>
+                </header>
+         
+            </section>
+
+        </body>    
+    </main>
+
+        <footer div class="footer bg-dark">
+            
+                
+                <h5>Nos Réseaux sociaux</h5>
+            
+                          
+                          <nav>
+                                <ul>
+                                    <li> 
+                                            <a  class="btn "href = "https://facebook.com" target="_new" title = "Follow Us" >
+                                            <span class= "icon -facebook2 "</span>
+
+                                             facebook 
+
+                                             </a> 
+
+                                    </li>  
+
+                                    <li> 
+
+                                            <a class="btn" href = "https://tweeter.com" target="_new" title = "Follow Us" > 
+                                            <span class="icon-twitter " ></span>
+
+                                            instagram 
+
+                                            </a>  
+
+                                     </li> 
+
+                                     <li> 
+
+                                            <a class="btn" href = "https://linkedin.com" target="_new" title = "Follow Us" > 
+                                            <span class="icon-linkedin"></span>
+
+                                            Linkedin
+
+                                            </a> 
+
+                                      </li> 
+
+                                </ul>
+                          </nav>
+
+                          
+        </footer>
+    </body>
+
+</html><!-- Fin du document HTML -->        

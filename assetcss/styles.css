@@ -1,0 +1,228 @@
+
+/* ici le selector root désigne la première balise de votre document cad <html>
+De plus , les deux tirets -- définit  une variable, ici on a creé une variable du nom de main title ,dont  la valeur est couleur à titre
+on déclare les variables au même endroit*/
+:root {
+	--main-title-color:(200,89,10);
+	--main-color:#000;
+	--main-font-size:2em;
+
+	/**
+	*couleur Bootstrap
+	**/
+
+	--primary: #007bff;
+	--primary: #007bff;
+	--secondary: #6c757d;
+	--success: #28a745;
+	--danger: #dc3545;
+	--warning: #ffc107;
+	--info: #17a2b4;
+	--dark: #343a40;
+	--light: #ffffff;
+}
+
+
+
+body {
+
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:var(--main-font-size); /* em correspond à l'unité de référence définie dans le navigateur : 16px */
+   color: var( --main-color);
+    
+}
+
+
+
+ul {
+
+	list-style-type:none;
+
+
+
+}
+
+
+
+ nav {
+ 	 color:var(--light);
+     
+
+ }
+
+
+ .flex-container {
+    display:flex;
+    flex-direction : row;
+}
+
+ head  nav  ul  li {
+    width : 10 em ;
+    margin right : 0,5 em ;
+	
+}
+
+
+ nav ul li a {
+
+	transform:rotate(0deg);
+	text-decoration:none;
+	color:inherit;
+	text-align:center;
+
+
+}
+
+/* la notion inherit, utilise une notion d'heritage , les propiétés seront puisées dans les variables défies au préalable ou elle choisira la couleru defie=nie dans l'un de ses parents ,ce qui facilite les mises à jour*/
+
+nav ul li a.btn {
+    transition: color 0.6s 0s ease-in, transform 0.4s 0.4s linear, background-color 0.8s 0.7s ease-out; /** Définit comment passer à l'état final **/
+}
+
+
+nav ul li a:.btn : hover {
+
+	color:var(--dark);
+	background-color:var(--light);
+	transform:rotate(360deg);
+	
+}
+
+
+
+
+
+header nav ul li {
+width:10em;
+margin-right:0.5em;
+
+}
+
+abbr {
+
+	text-decoration:none;
+	font-weight: bold;
+	
+}
+
+h1 , h2 , h3 , h4{
+    color: var( --title-color);
+}
+
+span[class^="icon-"] { /* va me chercher tt les element span contenent ou commensant par icon */
+	margin-right:o.3em;
+}
+/*selector de classe*/
+
+
+section {
+
+	height:100vh;
+
+}
+
+
+.dropdown {
+	color:var(--info);
+}
+
+.btn {
+
+	display: inline-block;
+	border:solid 1px var(--secondary);
+	width: 8em;
+    /*padding-left: 0.5em; 
+    padding-right: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;*/
+    padding: 1em 0.5em 1em 0.5em;
+	
+}
+
+
+
+.bg-light {
+
+	background-color:var(--light);
+	color:var(--dark);
+
+}
+
+
+.bg-dark {  
+
+	background-color:var(--dark);
+	color:var(--light);
+
+}
+
+
+
+.shadowed {
+
+	 box-shadow: var(--secondary) 1px 3px;
+}
+
+
+
+
+/* selection id elemen = #nom_id* les classes commence par un . les id pas un #*/
+
+
+
+
+ #section-html {
+
+	background-color:var(--info);
+
+}
+
+
+ #section-css {
+background-color:var(--warning);
+
+}
+
+#section-html  section #section html {
+    couleur de fond : rgb ( 255 ,  255 ,  255 );
+}
+
+#section-html  section # section html  h2 {
+    couleur : var ( --info );
+}
+
+
+/* footer*/
+
+.bgdark footer   ,.bg-light  footer{
+	color:inherit;
+	background-color:inherit;
+}
+
+
+
+ .bg-dark footer  ul , .bg-light  footer  ul {
+    margin : 0 ;
+    padding : 0 ;
+}
+
+
+.bg-dark footer  h5 , .bg-light footer h5 { 
+    color : inherit;
+}
+
+.bg-dark footer  a , .bg-light  footer  a {
+    color : inherit;
+    text-decoration : none;
+}
+
+
+span [ class ^ = "icon-" ] {
+    margin-right : 0,3 em ;
+}
+
+ article header p  span {
+    color : var(-- warning );
+}
+
+ 
